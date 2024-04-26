@@ -30,7 +30,7 @@ const Login = () => {
         setLoginSuccess('')
         setLoginError('')
 
-        // login existing uset
+        // login existing user
         signIn(email, password)
             .then(result => {
                 console.log(result.user)
