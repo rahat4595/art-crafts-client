@@ -68,7 +68,7 @@ const NavBar = () => {
                         </Link>
 
                          <Link to="/register">
-                            <button className="btn bg-[#0a9dbe] text-white">Register</button>
+                            <button className="btn bg-[#0abea9] text-white">Register</button>
                         </Link>
 
                        </div>
