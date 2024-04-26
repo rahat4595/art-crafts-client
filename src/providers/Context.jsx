@@ -18,13 +18,13 @@ const Context = ({children}) => {
     const [loading, setLoading] = useState(true)
 
 
-    // create user
+    // create user using em and pass
     const createUser = (email, password) => {
         setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
     
-        // Update profile
+        // Update profile not neccessary
         const updateUserProfile = async (name, photo) => {
             setLoading(true)
          try {
@@ -41,24 +41,25 @@ const Context = ({children}) => {
          }
         }
 
-    // login user
+    // login new user
     const signIn = (email, password) => {
         setLoading(true);
         return signInWithEmailAndPassword(auth, email, password)
     }
 
-    // google login
+    // google login new user
     const signInWithGoogle = () =>{
         setLoading(true);
         return signInWithPopup(auth, googleProvider)
     }
 
-    //  github login
+    //  github login new user
     const githubLogin = () =>{
         setLoading(true);
         return signInWithPopup(auth, githubprovider)
     }
 
+    // log out user
     const logOut = () =>{
         setLoading(true);
         return signOut(auth)
