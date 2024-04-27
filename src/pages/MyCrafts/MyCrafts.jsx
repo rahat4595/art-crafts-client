@@ -1,10 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/Context";
 import { GoStar } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 
 const MyCrafts = () => {
-    
+
     const { user } = useContext(AuthContext);
     console.log(user);
     const [lists, setLists] = useState([]);
@@ -37,10 +38,12 @@ const MyCrafts = () => {
                                     <p><b>Stock Status:</b> {list.stockStatus}</p>
                                 </div>
                                 <div className="flex gap-5">
-                                    <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
+                                   <Link to={`/updateCraft/${list._id}`}>
+                                   <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
                                         <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
                                         <span className="relative z-10">Update</span>
                                     </button>
+                                   </Link>
 
                                     <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
                                         <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>

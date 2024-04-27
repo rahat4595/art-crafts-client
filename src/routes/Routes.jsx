@@ -9,6 +9,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import MyCrafts from "../pages/MyCrafts/MyCrafts";
 import AllCrafts from "../pages/AllCrafts/AllCrafts";
+import Update from "../pages/Update/Update";
 
 
 
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
         {
           path:'/myList',
           element:<PrivateRoute><MyCrafts></MyCrafts></PrivateRoute>
+        },
+        {
+          path:'/updateCraft/:id',
+          element:<Update></Update>,
+          loader: ({params}) => fetch(`http://localhost:5000/crafts/${params.id}`)
         }
 
       ]
