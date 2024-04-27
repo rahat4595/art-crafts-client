@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/Context";
 import { GoStar } from "react-icons/go";
 import { Link } from "react-router-dom";
-
+import Swal from "sweetalert2";
 
 const MyCrafts = () => {
 
@@ -16,6 +16,39 @@ const MyCrafts = () => {
                 setLists(data);
             });
     }, [user]);
+
+    const handleDeleteCraft = (id) => {
+        // Show SweetAlert confirmation dialog
+        Swal.fire({
+            title: 'Are you sure?',
+            text: 'You will not be able to recover this craft!',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            confirmButtonText: 'Yes, delete it!',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If user confirms deletion, send DELETE request to server
+                fetch(`http://localhost:5000/crafts/${id}`, {
+                    method: 'DELETE',
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        // Update state to remove the deleted craft
+                        setLists(lists.filter(craft => craft._id !== id));
+                        // Show success message
+                        Swal.fire(
+                            'Deleted!',
+                            'Your craft has been deleted.',
+                            'success'
+                        );
+                    })
+                    .catch(error => console.error('Error deleting craft:', error));
+            }
+        });
+    };
 
     return (
         <div className="max-w-7xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
@@ -38,15 +71,15 @@ const MyCrafts = () => {
                                     <p><b>Stock Status:</b> {list.stockStatus}</p>
                                 </div>
                                 <div className="flex gap-5">
-                                   <Link to={`/updateCraft/${list._id}`}>
-                                   <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
-                                        <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
-                                        <span className="relative z-10">Update</span>
-                                    </button>
-                                   </Link>
+                                    <Link to={`/updateCraft/${list._id}`}>
+                                        <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
+                                            <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
+                                            <span className="relative z-10">Update</span>
+                                        </button>
+                                    </Link>
 
-                                    <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
-                                        <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
+                                    <button onClick={() => handleDeleteCraft(list._id)} className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
+                                        <span className="absolute inset-0 bg-red-500 duration-300 transition-transform group-hover:translate-x-full"></span>
                                         <span className="relative z-10">Delete</span>
                                     </button>
                                 </div>
