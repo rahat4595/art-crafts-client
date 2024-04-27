@@ -56,7 +56,7 @@ const Update = () => {
         <div className="bg-[#8bd94b6e] p-24">
             <h2 className="text-3xl text-center font-extrabold">Update a Craft</h2>
             <form onSubmit={handleUpdateCraft}>
-                {/* form name and subcategory row */}
+                {/* form name row */}
                 <div className="md:flex mb-8">
                     <div className="form-control md:w-1/2">
                         <label className="label">
@@ -86,7 +86,7 @@ const Update = () => {
                         </label>
                     </div>
                 </div>
-                {/* form supplier row */}
+                {/* form price and rating row */}
                 <div className="md:flex mb-8">
                     <div className="form-control md:w-1/2">
                         <label className="label">
@@ -105,7 +105,7 @@ const Update = () => {
                         </label>
                     </div>
                 </div>
-                {/* form category and details row */}
+                {/* form des and process row */}
                 <div className="md:flex mb-8">
                     <div className="form-control md:w-1/2">
                         <label className="label">
@@ -158,7 +158,7 @@ const Update = () => {
                         </label>
                     </div>
                 </div>
-                <input type="submit" value="ADD CRAFT" className=" bg-black text-white p-4  rounded-xl btn-block cursor-pointer" />
+                <input type="submit" value="UPDATE CRAFT" className=" bg-black text-white p-4  rounded-xl btn-block cursor-pointer" />
 
             </form>
         </div>
