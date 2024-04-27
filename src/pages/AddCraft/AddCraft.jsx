@@ -1,7 +1,17 @@
+import { useContext } from 'react';
 import Swal from 'sweetalert2'
+import { AuthContext } from '../../providers/Context';
 
 const AddCraft = () => {
 
+    const {user} = useContext(AuthContext);
+    console.log("user", user)
+
+    if (!user) {
+        return <div>Loading...</div>;
+    }
+
+    const { email, displayName, photoURL } = user;
 
     const handleAddCraft = event => {
         event.preventDefault();
@@ -16,13 +26,12 @@ const AddCraft = () => {
         const processing_time = form.processing_time.value;
         const customization = form.customization.value;
         const stockStatus = form.stockStatus.value;
-        const userName = form.userName.value;
-        const email = form.email.value
-        const photo = form.photo.value;
+        
 
-        const newCraft = { item_name, subcategory_Name, price, rating, short_Description, processing_time, customization, stockStatus, userName, email, photo }
+        const newCraft = { item_name, subcategory_Name, price, rating, short_Description, processing_time, customization, stockStatus, userName:displayName, email, photo:photoURL }
+        console.log("New Craft", newCraft)
 
-        console.log(newCraft)
+        
 
         // send data to the server
         fetch('http://localhost:5000/crafts',{
@@ -149,7 +158,14 @@ const AddCraft = () => {
                             <span className="label-text">User Email</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="email" placeholder="Email" className="input input-bordered w-full" />
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="Email"
+                                className="input input-bordered w-full"
+                                defaultValue={user.email}
+                                readOnly
+                            />
                         </label>
                     </div>
                     <div className="form-control md:w-1/2 ml-4">
@@ -157,7 +173,14 @@ const AddCraft = () => {
                             <span className="label-text">User Name</span>
                         </label>
                         <label className="input-group">
-                            <input type="text" name="userName" placeholder="Name" className="input input-bordered w-full" />
+                            <input
+                                type="text"
+                                name="userName"
+                                placeholder="Name"
+                                className="input input-bordered w-full"
+                                defaultValue={user.displayName}
+                                readOnly
+                            />
                         </label>
                     </div>
                 </div>
