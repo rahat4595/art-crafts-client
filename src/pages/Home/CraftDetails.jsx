@@ -1,6 +1,6 @@
 
 
-const CraftDetails = () => {
+const CraftDetails  = () => {
 
    
     return (
