@@ -20,7 +20,7 @@ const Home = () => {
 
             <div className="max-w-7xl mx-auto mt-10">
                 <h2 className="text-4xl font-bold text-center">Craft Items</h2>
-                <p className="text-center text-lg mt-10">Discover a world of creativity with our diverse collection of craft items, ranging from essentials to specialty supplies, perfect for unleashing your artistic potential</p>
+                <p className="text-center text-lg mt-10 px-52">Discover a world of creativity with our diverse collection of craft items, ranging from essentials to specialty supplies, perfect for unleashing your artistic potential</p>
             </div>
             <div className="max-w-7xl mx-auto mt-10 grid grid-cols-3 gap-4">
                {
