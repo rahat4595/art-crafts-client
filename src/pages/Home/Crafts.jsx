@@ -17,7 +17,7 @@ const Crafts = ({ craft }) => {
                     <p className="flex gap-2">{rating} <GoStar className="mt-1" /></p>
                 </div>
                 <div className="card-actions justify-start">
-                    <Link to={`craft-details/${_id}`} >
+                    <Link to={`/craft-details/${_id}`} >
                         <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
                         <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
                         <span className="relative z-10">View Details</span>

@@ -8,6 +8,7 @@ import CraftDetails from "../pages/Home/CraftDetails";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import MyCrafts from "../pages/MyCrafts/MyCrafts";
+import AllCrafts from "../pages/AllCrafts/AllCrafts";
 
 
 
@@ -23,26 +24,31 @@ const router = createBrowserRouter([
             loader: () => fetch('http://localhost:5000/crafts')
         },
         {
-          path:'register',
+          path:'/register',
           element:<Register></Register>
         },
         {
-          path:'login',
+          path:'/login',
           element:<Login></Login>
         },
         {
-          path:'adds',
+          path:'/adds',
           element:<PrivateRoute><AddCraft></AddCraft></PrivateRoute>
         },
         {
-          path:'craft-details/:id',
+          path:'/craft-details/:id',
           element:<PrivateRoute><CraftDetails></CraftDetails></PrivateRoute>,
           loader: ({params}) => fetch(`http://localhost:5000/crafts/${params.id}`)
           
           
         },
         {
-          path:'myList',
+          path:'/arts',
+          element:<AllCrafts></AllCrafts>,
+          loader: () => fetch('http://localhost:5000/crafts')
+        },
+        {
+          path:'/myList',
           element:<PrivateRoute><MyCrafts></MyCrafts></PrivateRoute>
         }
 
