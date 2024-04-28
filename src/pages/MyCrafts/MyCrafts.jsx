@@ -93,20 +93,20 @@ const MyCrafts = () => {
                 {
                     filteredLists?.map(list => (
                         <div key={list._id}>
-                            <div className="card w-full bg-base-100 shadow-xl">
-                                <figure><img className="duration-300 hover:scale-105" src={list.photo} alt="Shoes" /></figure>
+                            <div className="card w-full h-full bg-base-100 shadow-xl ">
+                                <figure><img className="duration-300 hover:scale-105 " src={list.photo} alt="Shoes" /></figure>
                                 <div className="card-body">
                                     <h2 className="card-title text-2xl">
                                         {list.item_name}
                                     </h2>
 
                                     <div className="flex my-4">
-                                        <p>PRICE: {list.price}</p>
+                                        <p>PRICE: ${list.price}</p>
                                         <p className="flex gap-2">{list.rating} <GoStar className="mt-1" /></p>
                                     </div>
                                     <div className="flex">
                                         <p><b>Customization:</b> {list.customization}</p>
-                                        <p><b>Stock Status:</b> {list.stockStatus}</p>
+                                        <p><b>Status:</b> {list.stockStatus}</p>
                                     </div>
                                     <div className="flex gap-5">
                                         <Link to={`/updateCraft/${list._id}`}>

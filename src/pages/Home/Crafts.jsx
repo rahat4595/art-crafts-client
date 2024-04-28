@@ -13,7 +13,7 @@ const Crafts = ({ craft }) => {
                 </h2>
                 <p className="text-gray-500">{short_Description}</p>
                 <div className="flex">
-                    <p>PRICE: {price}</p>
+                    <p>PRICE: ${price}</p>
                     <p className="flex gap-2">{rating} <GoStar className="mt-1" /></p>
                 </div>
                 <div className="card-actions justify-start">

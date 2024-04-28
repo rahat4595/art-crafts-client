@@ -17,7 +17,7 @@ const { _id, item_name, subcategory_Name, price, rating, short_Description, proc
                         <h1 className='text-xl text-black font-bold'>Processing Time: {processing_time}</h1>
                        
                         <div className='flex gap-10 mt-4'>
-                            <b className='lg:text-xl'>Rating: {rating}</b><b className='lg:text-xl'>Price: {price}</b>
+                            <b className='lg:text-xl'>Rating: {rating}</b><b className='lg:text-xl'>Price: ${price}</b>
                         </div>
                         <div className='flex gap-10 mt-4'>
                             <b className='lg:text-xl'>Customizaton: {customization}</b><b className='lg:text-xl'>Status: {stockStatus}</b>

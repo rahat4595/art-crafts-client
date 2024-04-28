@@ -11,7 +11,7 @@ const AddCraft = () => {
         return <div>Loading...</div>;
     }
 
-    const { email, displayName, photoURL } = user;
+    const { email, displayName,  } = user;
 
     const handleAddCraft = event => {
         event.preventDefault();
@@ -26,9 +26,10 @@ const AddCraft = () => {
         const processing_time = form.processing_time.value;
         const customization = form.customization.value;
         const stockStatus = form.stockStatus.value;
+        const photo = form.photo.value
         
 
-        const newCraft = { item_name, subcategory_Name, price, rating, short_Description, processing_time, customization, stockStatus, userName:displayName, email, photo:photoURL }
+        const newCraft = { item_name, subcategory_Name, price, rating, short_Description, processing_time, customization, stockStatus, userName:displayName, email, photo }
         console.log("New Craft", newCraft)
 
         
