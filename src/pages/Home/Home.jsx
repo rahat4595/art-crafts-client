@@ -12,7 +12,8 @@ const Home = () => {
         <div>
             <div className="max-w-7xl mx-auto mt-10">
                 <h2 className="text-4xl font-bold text-center">Explore Arts & Crafts</h2>
-                <p className="text-center text-lg mt-10">Embark on a creative journey into the world of arts and crafts, where imagination knows no bounds.</p>
+                <p className="text-center text-lg mt-10">
+Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
             </div>
             <div className="max-w-7xl mx-auto rounded-xl p-2 mt-5 shadow-xl">
                 <Banner></Banner>
