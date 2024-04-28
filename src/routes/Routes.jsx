@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Home></Home>,
-            loader: () => fetch('http://localhost:5000/crafts')
+            loader: () => fetch('https://arts-design-server.vercel.app/crafts')
         },
         {
           path:'/register',
@@ -39,14 +39,14 @@ const router = createBrowserRouter([
         {
           path:'/craft-details/:id',
           element:<PrivateRoute><CraftDetails></CraftDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/crafts/${params.id}`)
+          loader: ({params}) => fetch(`https://arts-design-server.vercel.app/crafts/${params.id}`)
           
           
         },
         {
           path:'/arts',
           element:<AllCrafts></AllCrafts>,
-          loader: () => fetch('http://localhost:5000/crafts')
+          loader: () => fetch('https://arts-design-server.vercel.app/crafts')
         },
         {
           path:'/myList',
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         {
           path:'/updateCraft/:id',
           element:<PrivateRoute><Update></Update></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/crafts/${params.id}`)
+          loader: ({params}) => fetch(`https://arts-design-server.vercel.app/crafts/${params.id}`)
         }
 
       ]

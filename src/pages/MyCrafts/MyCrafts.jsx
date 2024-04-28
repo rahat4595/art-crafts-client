@@ -28,7 +28,7 @@ const MyCrafts = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myList/${user?.email}`)
+        fetch(`https://arts-design-server.vercel.app/myList/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setLists(data);
@@ -49,7 +49,7 @@ const MyCrafts = () => {
         }).then((result) => {
             if (result.isConfirmed) {
                 // If user confirms deletion, send DELETE request to server
-                fetch(`http://localhost:5000/crafts/${id}`, {
+                fetch(`https://arts-design-server.vercel.app/crafts/${id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())
