@@ -26,7 +26,7 @@ const CategoryItem = () => {
     }, [subcategory_Name]);
 
     if (loading) {
-        return <h1>Loading...</h1>
+        return <h1 className="w-16 h-16 border-4 max-w-7xl mx-auto my-56 duration-1000 border-dashed rounded-full animate-spin border-violet-600"></h1>
     }
 
 

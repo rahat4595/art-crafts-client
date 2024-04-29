@@ -11,11 +11,13 @@ const ItemDetails = ({item}) => {
                 <h2 className="card-title text-2xl">
                     {item_name}
                 </h2>
+                <h2 className="text-xl font-medium py-5">SUBCATEGORY: {subcategory_Name}</h2>
                 <p className="text-gray-500">{short_Description}</p>
                 <div className="flex">
                     <p>PRICE: ${price}</p>
                     <p className="flex gap-2">{rating} <GoStar className="mt-1" /></p>
                 </div>
+                <h2>Processing Time: {processing_time}</h2>
                 <div className="card-actions justify-start">
                     <Link to={`/craft-details/${_id}`} >
                         <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">

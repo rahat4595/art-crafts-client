@@ -33,18 +33,18 @@ const Banner = () => {
           <div className='text-center bg-gray-700 h-full w-full bg-opacity-30 flex justify-center items-center'>
             <div className='mt-12 space-y-4'>
 
-              <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR PREMIER DESTINATION <br /> FOR ARTISTIC{' '}<Typewriter
-                words={['INSPIRATION', 'CREATION', 'EXPRESSION']}
+              <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR ULTIMATE SPOT <br /> FOR CREATIVE{' '}<Typewriter
+                words={['CREATION','INSPIRATION', 'EXPRESSION']}
                 loop={true}
                 cursor
                 cursorStyle='_'
                 typeSpeed={80}
                 deleteSpeed={50}
-                delaySpeed={1000}
+                delaySpeed={1200}
               /></h1>
 
               <div>
-                <p className='text-xl font-semibold italic text-white'>Every Click Unveils a New Adventure!</p>
+                <p className='text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
               </div>
 
               <button type="button" className="text-slate-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-extrabold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl">
@@ -60,7 +60,7 @@ const Banner = () => {
       </SwiperSlide>
       <SwiperSlide>
 
-        <div className='bg-no-repeat w-full bg-center bg-cover h-[550px] flex justify-center items-center' style={
+        <div className='bg-no-repeat w-full bg-center  bg-cover h-[550px] flex justify-center items-center' style={
           {
             backgroundImage: `url(${slider2})`,
           }
@@ -68,18 +68,18 @@ const Banner = () => {
           <div className='text-center bg-gray-700 h-full w-full bg-opacity-30 flex justify-center items-center'>
             <div className='mt-12 space-y-4'>
 
-              <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR PREMIER DESTINATION <br /> FOR ARTISTIC{' '}<Typewriter
-                words={['INSPIRATION', 'CREATION', 'EXPRESSION']}
-                loop={5}
+              <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR ULTIMATE SPOT <br /> FOR CREATIVE{' '}<Typewriter
+                words={['CREATION', 'INSPIRATION', 'EXPRESSION']}
+                loop={true}
                 cursor
                 cursorStyle='_'
                 typeSpeed={80}
                 deleteSpeed={50}
-                delaySpeed={1000}
+                delaySpeed={1200}
               /></h1>
 
               <div>
-                <p className='text-xl font-semibold italic text-white'>Every Click Unveils a New Adventure!</p>
+              <p className='text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
               </div>
 
               <button type="button" className="text-slate-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-extrabold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl">
@@ -104,18 +104,18 @@ const Banner = () => {
           <div className='text-center bg-gray-700 h-full w-full bg-opacity-30 flex justify-center items-center'>
             <div className='mt-12 space-y-4'>
 
-              <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR PREMIER DESTINATION <br /> FOR ARTISTIC{' '}<Typewriter
-                words={['INSPIRATION', 'CREATION', 'EXPRESSION']}
-                loop={5}
+              <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR ULTIMATE SPOT <br /> FOR CREATIVE{' '}<Typewriter
+                words={['CREATION','INSPIRATION', 'EXPRESSION']}
+                loop={true}
                 cursor
                 cursorStyle='_'
                 typeSpeed={80}
                 deleteSpeed={50}
-                delaySpeed={1000}
+                delaySpeed={1200}
               /></h1>
 
               <div>
-                <p className='text-xl font-semibold italic text-white'>Every Click Unveils a New Adventure!</p>
+              <p className='text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
               </div>
 
               <button type="button" className="text-slate-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-extrabold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl">

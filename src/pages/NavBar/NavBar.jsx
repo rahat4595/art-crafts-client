@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../providers/Context";
 
+
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
     const [showUsername, setShowUsername] = useState(false);
