@@ -4,6 +4,8 @@ import Banner from "./Banner/Banner";
 import { useEffect, useState } from "react";
 import SingleArt from "../SingleArt/SingleArt";
 import Reviews from "./Reviews";
+import { Bounce,  Fade,  JackInTheBox, Roll, Slide } from "react-awesome-reveal";
+
 
 
 
@@ -25,7 +27,9 @@ const Home = () => {
     return (
         <div>
             <div className="max-w-7xl mx-auto mt-10">
-                <h2 className="text-4xl font-bold text-center">Explore Arts & Crafts</h2>
+                <JackInTheBox triggerOnce>
+                <h2 className="text-4xl font-bold text-center ">Explore Arts & Crafts</h2>
+                </JackInTheBox>
             </div>
             {/* banner section */}
             <div className="max-w-7xl mx-auto rounded-xl p-2 mt-5 shadow-xl">
@@ -33,8 +37,12 @@ const Home = () => {
             </div>
 
             <div className="max-w-7xl mx-auto mt-10 px-5">
+                <Slide triggerOnce>
                 <h2 className="text-4xl font-bold text-center">Crafted Items</h2>
+                </Slide>
+                
                 <p className="text-center text-lg mt-10 lg:px-52">Discover a world of creativity with our diverse collection of craft and art items, ranging from essentials to specialty supplies, perfect for unleashing your artistic potential</p>
+                
             </div>
             {/* crafts section */}
             <div className="max-w-7xl mx-auto md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
@@ -44,7 +52,9 @@ const Home = () => {
 
             </div>
             <div className="max-w-7xl mx-auto mt-10 px-5">
+                <Bounce triggerOnce>
                 <h2 className="text-4xl font-bold text-center">What Our Customer Says</h2>
+                </Bounce>
                
             </div>
 
@@ -54,7 +64,9 @@ const Home = () => {
                 </div>
 
             <div className="max-w-7xl mx-auto mt-10">
+                <Fade triggerOnce>
                 <h2 className="text-4xl font-bold text-center">Art & Craft Categories</h2>
+                </Fade>
                 <p className="text-center text-lg mt-10 lg:px-52">
                     Explore an Array of Artistic Genres and Craft Categories, Each Offering a Unique Canvas for Your Creative Expression and Exploration.</p>
             </div>

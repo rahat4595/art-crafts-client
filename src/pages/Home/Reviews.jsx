@@ -21,9 +21,9 @@ const Reviews = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center justify-center p-8 bg-gray-200 text-gray-900">
-                            <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-16 h-16 mb-2 -mt-16 rounded-full bg-gray-500 object-cover" />
-                            <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                            <p className="text-sm uppercase">Aliquam illum</p>
+                            <img src="https://i.ibb.co/NVFsMp0/pexels-justin-shaifer-501272-1222271.jpg" alt="" className="w-16 h-16 mb-2 -mt-16 rounded-full bg-gray-500 object-cover" />
+                            <p className="text-xl font-semibold leading-tight">Justin Shaifer</p>
+                            <p className="text-sm uppercase">Production Worker</p>
                         </div>
                     </div>
 
@@ -42,9 +42,9 @@ const Reviews = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center justify-center p-8 bg-gray-200 text-gray-900">
-                            <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-16 h-16 mb-2 -mt-16 rounded-full bg-gray-500 object-cover" />
-                            <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                            <p className="text-sm uppercase">Aliquam illum</p>
+                            <img src="https://i.ibb.co/dQCYKbx/pexels-elletakesphotos-1680172.jpg" alt="" className="w-16 h-16 mb-2 -mt-16 rounded-full bg-gray-500 object-cover" />
+                            <p className="text-xl font-semibold leading-tight">Elle Hughes</p>
+                            <p className="text-sm uppercase">NGO Worker</p>
                         </div>
                     </div>
 
@@ -65,14 +65,16 @@ const Reviews = () => {
                             </p>
                         </div>
                         <div className="flex flex-col items-center justify-center p-8 bg-gray-200 text-gray-900">
-                            <img src="https://source.unsplash.com/50x50/?portrait?4" alt="" className="w-16 h-16 mb-2 -mt-16 rounded-full bg-gray-500 object-cover" />
-                            <p className="text-xl font-semibold leading-tight">Distinctio Animi</p>
-                            <p className="text-sm uppercase">Aliquam illum</p>
+                            <img src="https://i.ibb.co/CQLC6r6/pexels-brett-sayles-1073097.jpg" alt="" className="w-16 h-16 mb-2 -mt-16 rounded-full bg-gray-500 object-cover" />
+                            <p className="text-xl font-semibold leading-tight">Brett Sayles</p>
+                            <p className="text-sm uppercase">Entrepreneur</p>
                         </div>
                     </div>
 
                 </div>
             </section>
+
+            
         </div>
     );
 };

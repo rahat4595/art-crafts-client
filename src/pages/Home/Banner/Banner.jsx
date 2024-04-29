@@ -5,8 +5,8 @@ import '../../../../node_modules/swiper/swiper-bundle.min.css';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import slider1 from '../../../assets/slider-1.png';
-import slider2 from '../../../assets/slider-2.jpg';
-import slider3 from '../../../assets/slider-3.jpg';
+import slider2 from '../../../assets/slider-4.jpg';
+import slider3 from '../../../assets/slider-5.jpg';
 import { Typewriter } from 'react-simple-typewriter';
 
 
@@ -25,7 +25,7 @@ const Banner = () => {
 
       <SwiperSlide>
 
-        <div className='bg-no-repeat w-full bg-center bg-cover h-[550px] flex justify-center items-center' style={
+        <div className='bg-no-repeat w-full  bg-center bg-cover h-[550px] flex justify-center items-center' style={
           {
             backgroundImage: `url(${slider1})`,
           }
@@ -44,7 +44,7 @@ const Banner = () => {
               /></h1>
 
               <div>
-                <p className='text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
+                <p className=' lg:text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
               </div>
 
               <button type="button" className="text-slate-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-extrabold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl">
@@ -62,7 +62,7 @@ const Banner = () => {
 
         <div className='bg-no-repeat w-full bg-center  bg-cover h-[550px] flex justify-center items-center' style={
           {
-            backgroundImage: `url(${slider2})`,
+            backgroundImage:`linear-gradient(to right, rgba(0,0,0,0.23), rgba(0,0,0,0.23)), url(${slider2})`,
           }
         }>
           <div className='text-center bg-gray-700 h-full w-full bg-opacity-30 flex justify-center items-center'>
@@ -98,7 +98,7 @@ const Banner = () => {
 
         <div className='bg-no-repeat w-full bg-center bg-cover h-[550px] flex justify-center items-center' style={
           {
-            backgroundImage: `url(${slider3})`,
+            backgroundImage:`linear-gradient(to right, rgba(0,0,0,0.23), rgba(0,0,0,0.23)), url(${slider3})`,
           }
         }>
           <div className='text-center bg-gray-700 h-full w-full bg-opacity-30 flex justify-center items-center'>
