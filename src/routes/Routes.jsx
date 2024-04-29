@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import MyCrafts from "../pages/MyCrafts/MyCrafts";
 import AllCrafts from "../pages/AllCrafts/AllCrafts";
 import Update from "../pages/Update/Update";
+import CategoryItem from "../pages/CategoryItem/CategoryItem";
 
 
 
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
           
         },
         {
-          path:'/arts',
+          path:'/allArts',
           element:<AllCrafts></AllCrafts>,
           loader: () => fetch('https://arts-design-server.vercel.app/crafts')
         },
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
           path:'/updateCraft/:id',
           element:<PrivateRoute><Update></Update></PrivateRoute>,
           loader: ({params}) => fetch(`https://arts-design-server.vercel.app/crafts/${params.id}`)
+        },
+        {
+          path:'/arts/:subcategory_Name',
+          element:<CategoryItem></CategoryItem>
         }
 
       ]

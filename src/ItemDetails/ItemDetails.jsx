@@ -1,11 +1,11 @@
-import { GoStar } from "react-icons/go"; import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { GoStar } from "react-icons/go";
 
-
-const Crafts = ({ craft }) => {
-
-    const { _id, item_name, subcategory_Name, price, rating, short_Description, processing_time, customization, stockStatus, userName, email, photo } = craft
+const ItemDetails = ({item}) => {
+    const { _id, item_name, subcategory_Name, price, rating, short_Description, processing_time, customization, stockStatus, userName, email, photo } = item
     return (
-        <div className="card w-full bg-base-100 shadow-xl">
+        <div>
+            <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img className="duration-300 hover:scale-105" src={photo} alt="Shoes" /></figure>
             <div className="card-body">
                 <h2 className="card-title text-2xl">
@@ -26,7 +26,8 @@ const Crafts = ({ craft }) => {
                 </div>
             </div>
         </div>
+        </div>
     );
 };
 
-export default Crafts;
+export default ItemDetails;

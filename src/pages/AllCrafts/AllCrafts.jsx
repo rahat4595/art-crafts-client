@@ -8,26 +8,22 @@ const AllCrafts = () => {
             <table className="table-auto w-full">
                 <thead>
                     <tr className="text-xl">
-                        <th className="px-4 py-2"></th> 
-                        <th className="px-4 py-2">Name</th> 
-                        <th className="px-4 py-2">Subcategory</th> 
-                        <th className="px-4 py-2">Price</th> 
-                        <th className="px-4 py-2">Rating</th> 
-                        <th className="px-4 py-2">Customization</th> 
-                        <th className="px-4 py-2">Stock Status</th> 
+                        <th className="px-4 py-2"></th>
+                        <th className="px-4 py-2">Name</th>
+                        <th className="px-4 py-2">Subcategory</th>
+                        <th className="px-4 py-2">Price</th>
+                        <th className="px-4 py-2">Rating</th>
                         <th className="px-4 py-2">Details</th> {/* Add this column for the button */}
                     </tr>
-                </thead> 
+                </thead>
                 <tbody className="text-xl">
                     {crafts.map((craft, index) => (
                         <tr key={craft._id}>
                             <td className="border px-4 py-4">{index + 1}</td>
                             <td className="border px-4 py-2">{craft.item_name}</td>
                             <td className="border px-4 py-2">{craft.subcategory_Name}</td>
-                            <td className="border px-4 py-2">{craft.price}</td>
+                            <td className="border px-4 py-2">{craft.price} $</td>
                             <td className="border px-4 py-2">{craft.rating}</td>
-                            <td className="border px-4 py-2">{craft.customization}</td>
-                            <td className="border px-4 py-2">{craft.stockStatus}</td>
                             <td className="border px-4 py-2">
                                 <Link to={`/craft-details/${craft._id}`} className="text-blue-500 hover:underline">View Details</Link>
                             </td>
