@@ -4,7 +4,7 @@ import Banner from "./Banner/Banner";
 import { useEffect, useState } from "react";
 import SingleArt from "../SingleArt/SingleArt";
 import Reviews from "./Reviews";
-import { Bounce,  Fade,  JackInTheBox, Roll, Slide } from "react-awesome-reveal";
+import { Bounce,  Fade,  JackInTheBox,  Slide } from "react-awesome-reveal";
 
 
 
