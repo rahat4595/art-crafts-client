@@ -38,6 +38,7 @@ const Home = () => {
             <div className="max-w-7xl mx-auto mt-10">
                 <JackInTheBox triggerOnce>
                     <h2 className="text-4xl font-bold text-center ">Explore Arts & Crafts</h2>
+                    <p className="text-center text-lg mt-10 px-5 lg:px-52">Explore your favourite arts and crafts categories and get yourself a inspiration to go beyond about artisticts</p>
                 </JackInTheBox>
             </div>
             {/* banner section */}
@@ -98,11 +99,11 @@ const Home = () => {
             </div>
             {/* categories section */}
             <Slide triggerOnce>
-            <div className="max-w-7xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
-                {
-                    arts.map(art => <SingleArt key={art._id} art={art}></SingleArt>)
-                }
-            </div>
+                <div className="max-w-7xl mx-auto my-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+                    {
+                        arts.map(art => <SingleArt key={art._id} art={art}></SingleArt>)
+                    }
+                </div>
             </Slide>
         </div>
     );

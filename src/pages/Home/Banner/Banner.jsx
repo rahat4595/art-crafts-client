@@ -34,7 +34,7 @@ const Banner = () => {
             <div className='mt-12 space-y-4'>
 
               <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR ULTIMATE SPOT <br /> FOR CREATIVE{' '}<Typewriter
-                words={['CREATION','INSPIRATION', 'EXPRESSION']}
+                words={['CREATION', 'INSPIRATION', 'EXPRESSION']}
                 loop={true}
                 cursor
                 cursorStyle='_'
@@ -47,11 +47,9 @@ const Banner = () => {
                 <p className=' lg:text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
               </div>
 
-              <button type="button" className="text-slate-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-extrabold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl">
-                Explore now
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
+              <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
+                <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
+                <span className="relative z-10">Explore</span>
               </button>
 
             </div>
@@ -62,7 +60,7 @@ const Banner = () => {
 
         <div className='bg-no-repeat w-full bg-center  bg-cover h-[550px] flex justify-center items-center' style={
           {
-            backgroundImage:`linear-gradient(to right, rgba(0,0,0,0.23), rgba(0,0,0,0.23)), url(${slider2})`,
+            backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.23), rgba(0,0,0,0.23)), url(${slider2})`,
           }
         }>
           <div className='text-center bg-gray-700 h-full w-full bg-opacity-30 flex justify-center items-center'>
@@ -79,14 +77,12 @@ const Banner = () => {
               /></h1>
 
               <div>
-              <p className='text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
+                <p className='lg:text-xl font-semibold  text-white'>Explore the allure of artisanal craftsmanship with our thoughtfully curated assortment of one-of-a-kind and inspiring creations</p>
               </div>
 
-              <button type="button" className="text-slate-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-extrabold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl">
-                Explore now
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
+              <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
+                <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
+                <span className="relative z-10">Explore</span>
               </button>
 
             </div>
@@ -98,14 +94,14 @@ const Banner = () => {
 
         <div className='bg-no-repeat w-full bg-center bg-cover h-[550px] flex justify-center items-center' style={
           {
-            backgroundImage:`linear-gradient(to right, rgba(0,0,0,0.23), rgba(0,0,0,0.23)), url(${slider3})`,
+            backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.23), rgba(0,0,0,0.23)), url(${slider3})`,
           }
         }>
           <div className='text-center bg-gray-700 h-full w-full bg-opacity-30 flex justify-center items-center'>
             <div className='mt-12 space-y-4'>
 
               <h1 className='text-xl md:text-6xl font-bold text-white'>YOUR ULTIMATE SPOT <br /> FOR CREATIVE{' '}<Typewriter
-                words={['CREATION','INSPIRATION', 'EXPRESSION']}
+                words={['CREATION', 'INSPIRATION', 'EXPRESSION']}
                 loop={true}
                 cursor
                 cursorStyle='_'
@@ -115,14 +111,13 @@ const Banner = () => {
               /></h1>
 
               <div>
-              <p className='text-xl font-semibold  text-white'>Discover the beauty of handmade craftsmanship with our curated selection of unique and inspiring creations.</p>
+                <p className='lg:text-xl font-semibold  text-white'>
+                  Explore the allure of artisanal craftsmanship with our handpicked array of distinctive and captivating arts.</p>
               </div>
 
-              <button type="button" className="text-slate-900 focus:ring-4 focus:outline-none focus:ring-blue-300 font-extrabold rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center  bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl">
-                Explore now
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
+              <button className="text-xl font-semibold px-5 py-2 bg-black text-white rounded-md mt-10 relative overflow-hidden group">
+                <span className="absolute inset-0 bg-[#23BE0A] duration-300 transition-transform group-hover:translate-x-full"></span>
+                <span className="relative z-10">Explore</span>
               </button>
 
             </div>
