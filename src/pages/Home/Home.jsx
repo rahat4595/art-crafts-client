@@ -4,6 +4,8 @@ import Banner from "./Banner/Banner";
 import { useEffect, useState } from "react";
 import SingleArt from "../SingleArt/SingleArt";
 import Reviews from "./Reviews";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import { Bounce, Fade, JackInTheBox, Slide } from "react-awesome-reveal";
 import Works from "./Works";
 
@@ -23,7 +25,13 @@ const Home = () => {
             })
     }, [])
 
+
+
     console.log(arts)
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
 
     return (
         <div>
@@ -46,7 +54,7 @@ const Home = () => {
 
             </div>
             {/* crafts section */}
-            <div className="max-w-7xl mx-auto md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
+            <div className="max-w-7xl mx-auto md:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5 " data-aos="zoom-in">
                 {
                     firstSixCrafts.map(craft => <Crafts key={craft._id} craft={craft}></Crafts>)
                 }
@@ -89,11 +97,13 @@ const Home = () => {
                     Explore an Array of Artistic Genres and Craft Categories, Each Offering a Unique Canvas for Your Creative Expression and Exploration.</p>
             </div>
             {/* categories section */}
+            <Slide triggerOnce>
             <div className="max-w-7xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">
                 {
                     arts.map(art => <SingleArt key={art._id} art={art}></SingleArt>)
                 }
             </div>
+            </Slide>
         </div>
     );
 };

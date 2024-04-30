@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/Context";
 import { GoStar } from "react-icons/go";
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import Swal from "sweetalert2";
 
 const MyCrafts = () => {
@@ -35,6 +37,10 @@ const MyCrafts = () => {
                 setFilteredLists(data);
             });
     }, [user]);
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
 
     const handleDeleteCraft = (id) => {
         // Show SweetAlert confirmation dialog
@@ -93,7 +99,7 @@ const MyCrafts = () => {
                 {
                     filteredLists?.map(list => (
                         <div key={list._id}>
-                            <div className="card w-full h-full bg-base-100 shadow-xl ">
+                            <div className="card w-full h-full bg-base-100 shadow-xl " data-aos="zoom-in">
                                 <figure><img className="duration-300 hover:scale-105 " src={list.photo} alt="Shoes" /></figure>
                                 <div className="card-body">
                                     <h2 className="card-title text-2xl">

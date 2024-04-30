@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import 'animate.css';
 
 
 const CraftDetails  = () => {
@@ -7,7 +8,7 @@ const { _id, item_name, subcategory_Name, price, rating, short_Description, proc
    
     return (
         <div>
-            <div className="hero my-20 ">
+            <div className="hero my-20 animate__animated animate__zoomIn">
                 <div className="hero-content flex-col gap-10 md:gap-28 lg:flex-row">
                     <img src={photo}className=" rounded-lg shadow-2xl" />
                     <div>
