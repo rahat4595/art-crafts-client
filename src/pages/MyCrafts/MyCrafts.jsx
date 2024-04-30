@@ -82,7 +82,7 @@ const MyCrafts = () => {
                 <p className="text-center text-lg mt-10">You will find all the crafts and arts you have added</p>
             </div>
             <div className="max-w-7xl mx-auto text-center mt-5">
-                <h2 className="text-xl font-bold mb-2" >Filter Your Crafts</h2>
+                <h2 className="text-xl font-bold mb-4" >Filter Your Crafts based on customization</h2>
                 {/* <select id="customizationFilter" value={customizationFilter} onChange={(e) => setCustomizationFilter(e.target.value)}>
                     <option value="">All</option>
                     <option value="Yes">Customized</option>

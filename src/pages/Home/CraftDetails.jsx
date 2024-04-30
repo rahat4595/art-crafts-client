@@ -14,8 +14,10 @@ const { _id, item_name, subcategory_Name, price, rating, short_Description, proc
                     <div>
                         <h1 className="text-5xl font-bold">{item_name}</h1>
                         <p className="py-6">{short_Description}</p>
-                        <p className='mb-2 text-xl text-black'><b>Sub Category:</b> {subcategory_Name}</p>
-                        <h1 className='text-xl text-black font-bold'>Processing Time: {processing_time}</h1>
+                        <div className="my-4">
+                        <b className=' text-xl '>Sub Category: {subcategory_Name}</b>
+                        </div>
+                        <h1 className='text-xl  font-bold'>Processing Time: {processing_time}</h1>
                        
                         <div className='flex gap-10 mt-4'>
                             <b className='lg:text-xl'>Rating: {rating}</b><b className='lg:text-xl'>Price: ${price}</b>
