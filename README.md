@@ -39,7 +39,7 @@ Crafty Corner: Where imagination thrives and handmade wonders come to life, offe
 
 ## Technologies
 
-html - css - JavaScript - react - tailwind - firebase - node - express - mongoDB
+- **html** - **css** - **JavaScript** - **react** - **tailwind** - **firebase** - **node** - **express** - **mongoDB**
 
 ## NPM Packages
 
