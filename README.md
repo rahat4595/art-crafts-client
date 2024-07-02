@@ -18,9 +18,6 @@ Crafty Corner: Where imagination thrives and handmade wonders come to life, offe
 - **Login and Register:** Securely access your account or create a new one to unlock exclusive creation and inspiration.
 
 
-## B9 A10 Type-02 Requirements
-
-
 ## Category
 
 - **Paper Crafts & Glass Art**
@@ -40,8 +37,11 @@ Crafty Corner: Where imagination thrives and handmade wonders come to life, offe
 - **Glass Dying & Staining**
 
 
+## Technologies
 
-## NPM Packages for challenge task
+html - css - JavaScript - react - tailwind - firebase - node - express - mongoDB
+
+## NPM Packages
 
 - **React Simple Typewriter**
 
